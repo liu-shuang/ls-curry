@@ -38,7 +38,7 @@ There are some tips:
 - When calling the curried function, remember the first empty bracket tell the module that currying is finished;
 - Then, you can apply the rest parameters in the following bracket;
 
-Note: You may be astonished at that brackets. I can't look for the solution that satisfies no parameter limit and the currying function in the meantime. If you know, please tell me.
+Note: You may be astonished at those brackets. I can't look for the solution that satisfies no parameter limit and the currying function in the meantime. If you know, please tell me.
 
 ## How to use the function `uncurrying`?
 The source code of `uncurrying` is this:
@@ -53,5 +53,5 @@ let add5 = uncurrying(add4);
 add5(1,2,3,4); // equal 10
 
 let add6 = uncurrying(currying(add0));
-add5(1,2,3,4)()();      // equal 10
+add6(1,2,3,4)()();      // equal 10
 ```
